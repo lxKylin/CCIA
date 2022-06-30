@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "prettier --write .",
+    "commit": "cz"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.6",
@@ -16,11 +18,24 @@
     "vue-router": "^4.0.16"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.7.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.20.1",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
