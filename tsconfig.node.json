@@ -2,7 +2,9 @@
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    // 解决模块 ""path"" 只能在使用 "allowSyntheticDefaultImports" 标志时进行默认导入ts
+    "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"]
 }
