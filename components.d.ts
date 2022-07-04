@@ -6,7 +6,12 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElMain: typeof import('element-plus/es')['ElMain']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavHeader: typeof import('./src/components/nav-header.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
